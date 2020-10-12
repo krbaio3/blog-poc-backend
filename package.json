@@ -1,0 +1,55 @@
+{
+  "name": "ig-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "commit": "npx cz"
+  },
+  "dependencies": {
+    "knex": "<0.20.0",
+    "sqlite3": "latest",
+    "strapi": "3.2.3",
+    "strapi-admin": "3.2.3",
+    "strapi-connector-bookshelf": "3.2.3",
+    "strapi-plugin-content-manager": "3.2.3",
+    "strapi-plugin-content-type-builder": "3.2.3",
+    "strapi-plugin-documentation": "3.2.3",
+    "strapi-plugin-email": "3.2.3",
+    "strapi-plugin-graphql": "3.2.3",
+    "strapi-plugin-upload": "3.2.3",
+    "strapi-plugin-users-permissions": "3.2.3",
+    "strapi-utils": "3.2.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a519bea6-0330-4337-b6a0-518ee91eb278"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
